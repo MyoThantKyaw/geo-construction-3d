@@ -1,0 +1,78 @@
+{
+  "name": "V2GeoConstruction3D",
+  "version": "0.1.0",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "main": "./dist/V2GeoConstruction3D.umd.js",
+  "module": "./dist/V2GeoConstruction3D.es.js",
+  "unpkg": "./dist/V2GeoConstruction3D.umd.js",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@flatten-js/core": "^1.3.5",
+    "@quasar/extras": "^1.0.0",
+    "@tweenjs/tween.js": "^20.0.3",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "camera-controls": "^2.3.4",
+    "collisions": "^2.0.13",
+    "core-js": "^3.8.3",
+    "firebase": "^9.22.0",
+    "quasar": "^2.0.0",
+    "robust-point-in-polygon": "^1.0.3",
+    "scroll-into-view": "^1.16.2",
+    "three": "^0.149.0",
+    "vue-router": "^4.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/compiler-sfc": "^3.3.4",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "vite": "^4.3.5",
+    "vue-cli-plugin-quasar": "~5.0.2",
+    "vue-loader": "^17.1.1"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.13"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "ignorePatterns": [
+      "**/*.js"
+    ],
+    "rules": {
+      "no-unused-vars": "off",
+      "vue/multi-word-component-names": "off"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/V2GeoConstruction3D.es.js",
+      "require": "./dist/V2GeoConstruction3D.umd.js"
+    }
+  },
+  "jsdelivr": "./dist/V2GeoConstruction3D.umd.js"
+}
